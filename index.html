@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tu Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Ayuda de la Aplicación</title>
     <!-- Agregar enlaces a los archivos de estilo de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -15,10 +16,10 @@
             background-color: #00754D;
         }
         .navbar-brand, .navbar-nav .nav-link {
-            color: #000000;
+            color: #000000; /* Cambiado a negro para mayor contraste */
         }
         .navbar-toggler-icon {
-            background-color: #FFFFFF;
+            background-color: #000000; /* Cambiado a negro para mayor contraste */
         }
         section {
             background-color: #2A8C63;
@@ -36,74 +37,64 @@
             bottom: 0;
             width: 100%;
         }
+        .javadoc-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
     </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Nombre de tu Aplicación</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#aspectosGenerales">Aspectos Generales</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#login">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#registro">Registro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ventanaPrincipal">Ventana Principal</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nombre de tu Aplicación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="funcionamiento.html">Funcionamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_principal.html">Ventana Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_registro.html">Ventana Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_inicio_sesion.html">Ventana Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Contenido principal -->
+        <section>
+            <h1>Manual de Ayuda de la Aplicación</h1>
+            <p>Bienvenido al manual de ayuda de la aplicación...</p>
+        </section>
     </div>
-</nav>
 
-<div class="container mt-4">
-    <!-- Contenido de las secciones -->
-    <section id="aspectosGenerales">
-        <h2>Aspectos Generales</h2>
-        <p>Información general sobre la aplicación...</p>
-    </section>
+    <footer>
+        <p>© 2024 Tu Proyecto | Todos los derechos reservados</p>
+        <p>Disclaimer: Este sitio web es solo un ejemplo. No representa un producto o servicio real.</p>
+        <p>Autores: Autor 1, Autor 2, Autor 3, Autor 4</p>
+        <a href="enlace_al_javadoc/index.html" target="_blank" class="javadoc-btn">Ir al JavaDoc</a>
+    </footer>
 
-    <section id="login">
-        <h2>Login</h2>
-        <!-- Contenido de la sección de Login -->
-    </section>
-
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <!-- Contenido de la sección de Inicio -->
-    </section>
-
-    <section id="registro">
-        <h2>Registro</h2>
-        <!-- Contenido de la sección de Registro -->
-    </section>
-
-    <section id="ventanaPrincipal">
-        <h2>Ventana Principal</h2>
-        <!-- Contenido de la sección de Ventana Principal -->
-    </section>
-</div>
-
-<footer>
-    <p>© 2024 Tu Proyecto | Todos los derechos reservados</p>
-    <p>Disclaimer: Este sitio web es solo un ejemplo. No representa un producto o servicio real.</p>
-    <p>Autores: Autor 1, Autor 2, Autor 3, Autor 4</p>
-</footer>
-
-<!-- Scripts de Bootstrap y script personalizado para alternar modos -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts de Bootstrap y script personalizado para alternar modos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
