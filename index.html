@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manual de Uso y Asistencia</title>
+    <!-- Agregar enlaces a los archivos de estilo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <!-- Barra de navegación con migas de pan -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Sección 1</a></li>
+            <li class="breadcrumb-item"><a href="#">Subsección 1.1</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manual de Uso</li>
+        </ol>
+    </nav>
+
+    <!-- Botones para alternar entre modos -->
+    <div class="mb-3">
+        <button class="btn btn-primary" onclick="cambiarModo('usuario')">Modo Usuario</button>
+        <button class="btn btn-secondary" onclick="cambiarModo('profesional')">Modo Profesional</button>
+    </div>
+
+    <!-- Contenido del manual -->
+    <div id="contenidoUsuario">
+        <h1>Manual de Uso - Modo Usuario</h1>
+        <!-- Aquí va el contenido del manual para el usuario -->
+        <p>Explicaciones detalladas sobre el uso de la aplicación...</p>
+        <img src="imagen_usuario.jpg" alt="Imagen de ejemplo para el usuario">
+    </div>
+
+    <div id="contenidoProfesional" style="display: none;">
+        <h1>JavaDoc - Modo Profesional</h1>
+        <!-- Enlace al JavaDoc de la aplicación -->
+        <p>Enlace directo al JavaDoc para desarrolladores...</p>
+        <a href="enlace_al_javadoc/index.html" target="_blank" class="btn btn-info">Ir al JavaDoc</a>
+    </div>
+
+</div>
+
+<!-- Scripts de Bootstrap y script personalizado para alternar modos -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function cambiarModo(modo) {
+        if (modo === 'usuario') {
+            document.getElementById('contenidoUsuario').style.display = 'block';
+            document.getElementById('contenidoProfesional').style.display = 'none';
+        } else if (modo === 'profesional') {
+            document.getElementById('contenidoUsuario').style.display = 'none';
+            document.getElementById('contenidoProfesional').style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
