@@ -9,9 +9,16 @@
     <style>
         body {
             background-color: #89E8B8;
+            padding-top: 56px; /* Altura del navbar fijo */
         }
         nav {
             background-color: #00754D;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #FFFFFF;
+        }
+        .navbar-toggler-icon {
+            background-color: #FFFFFF;
         }
         section {
             background-color: #2A8C63;
@@ -33,28 +40,28 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#" style="color: #FFFFFF;">Nombre de tu Aplicación</a>
+        <a class="navbar-brand" href="#">Nombre de tu Aplicación</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#aspectosGenerales" style="color: #FFFFFF;">Aspectos Generales</a>
+                    <a class="nav-link" href="#aspectosGenerales">Aspectos Generales</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#login" style="color: #FFFFFF;">Login</a>
+                    <a class="nav-link" href="#login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#inicio" style="color: #FFFFFF;">Inicio</a>
+                    <a class="nav-link" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#registro" style="color: #FFFFFF;">Registro</a>
+                    <a class="nav-link" href="#registro">Registro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#ventanaPrincipal" style="color: #FFFFFF;">Ventana Principal</a>
+                    <a class="nav-link" href="#ventanaPrincipal">Ventana Principal</a>
                 </li>
             </ul>
         </div>
