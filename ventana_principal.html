@@ -32,9 +32,9 @@
             color: #FFFFFF;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
+            bottom: 0;
         }
         .javadoc-btn {
             background-color: #004D29;
@@ -61,6 +61,12 @@
             border-radius: 8px;
             margin: 10px 0;
         }
+        #ventanaPrincipal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -68,7 +74,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-     <a class="navbar-brand" href="#">Mercadona APP</a>            
+            <a class="navbar-brand" href="index.html">Mercadona APP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -76,13 +82,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="funcionamiento.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_principal.html">Ventana Principal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ventana_registro.html">Ventana Registro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ventana_inicio_sesion.html">Ventana Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalacion_java.html">Instalación de Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empaquetar_en_jar.html">Empaquetado</a>
                     </li>
                 </ul>
             </div>
@@ -95,6 +110,17 @@
             <p>En esta primera ventana podemos comprobar la ventana principal donde podremos iniciar sesión si ya poseemos una
                 cuenta, crearnos una en el caso de que no tengamos ninguna y si no queremos crearnos una cuenta y no
                 tenemos ninguna podremos acceder a la aplicación como invitado.</p>
+
+            <img src="imagenes/vistaInicio.png" alt="Imagen de la vista principal de la app">
+            <p>Como podemos apreciar en la siguiente imagen, disponemos de una vista inicial confromada por una barra de menu, una breve explicacion del funcionamiento y finalidad de nuestra APP 
+                junto con una serie de opciones disponibles para su uso
+            </p>
+            <img src="imagenes/vistaInicio2.png" alt="Imagen de la vista principal de la app junto con los tooltips y atajos de teclado">
+            <img src="imagenes/vistaInicio3.png" alt="Imagen de la vista principal de la app junto con el emnu contextual">
+            
+
+            <p>Como podemos apreciar la APP dispone de atajos de teclado, tooltips para su mayor accesibilidad y herramientas extras para facilitar nuestro trabajo como lo es el menu contextual desplegable al pulsa click derecho
+            </p>
         </section>
     </div>
 

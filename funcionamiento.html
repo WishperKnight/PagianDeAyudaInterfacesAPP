@@ -7,23 +7,27 @@
     <title>Funcionamiento de la App</title>
     <!-- Agregar enlaces a los archivos de estilo de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="icon" href="imagenes/app.ico" type="image/x-icon">
+    <link rel="icon" href="imagenes/app.ico" type="image/x-icon">
     <style>
         body {
             background-color: #89E8B8;
-            padding-top: 56px; /* Altura del navbar fijo */
+            padding-top: 56px;
+            /* Altura del navbar fijo */
         }
 
         nav {
             background-color: #00754D;
         }
 
-        .navbar-brand, .navbar-nav .nav-link {
-            color: #000000; /* Cambiado a negro para mayor contraste */
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #000000;
+            /* Cambiado a negro para mayor contraste */
         }
 
         .navbar-toggler-icon {
-            background-color: #000000; /* Cambiado a negro para mayor contraste */
+            background-color: #000000;
+            /* Cambiado a negro para mayor contraste */
         }
 
         section {
@@ -39,9 +43,9 @@
             color: #FFFFFF;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
+            bottom: 0;
         }
 
         .javadoc-btn {
@@ -78,7 +82,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Mercadona APP</a>
+            <a class="navbar-brand" href="index.html">Mercadona APP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,7 +90,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="funcionamiento.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ventana_principal.html">Ventana Principal</a>
@@ -97,18 +101,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="ventana_inicio_sesion.html">Ventana Iniciar Sesión</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalacion_java.html">Instalación de Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empaquetar_en_jar.html">Empaquetado</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <div class="container mt-4">
         <!-- Contenido de la sección Funcionamiento -->
         <section>
             <h2>Funcionamiento de la App</h2>
-            <p>Esta App sirve para realizar compras de productos del supermercado Mercadona de forma digital...</p>
+            <p>Bienvenidos a la aplicación oficial de Mercadona, esta aplicacion ha sido diseñada para la venta de
+                alimentos online de una forma facil y sencilla, aquí puedes acceder a la ventana principal de dos formas
+                diferentes, la forma principal es acceder con una cuenta ya creada, de esta forma tendras acceso a todas
+                las funcionalidades de la aplicacion, la otra forma es con una cuenta de invitado, aqui tendras una
+                funcionalidad mas limitada, tambien si no tienes cuenta puedes crear una e iniciar sesion con ella
+                posteriormente</p>
             <!-- Agrega la ruta correcta de tu imagen -->
-            <img id="funcionamiento-image" src="ruta_de_la_imagen.jpg" alt="Imagen de Funcionamiento">
+            <img id="funcionamiento-image" src="imagenes/funcionamiento.png" alt="Imagen de Funcionamiento">
         </section>
     </div>
 

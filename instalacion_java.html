@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación de Java en Windows - Manual de Ayuda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #89E8B8;
+            padding-top: 56px;
+        }
+
+        nav {
+            background-color: #00754D;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #000000;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #000000;
+        }
+
+        section {
+            background-color: #2A8C63;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+
+        footer {
+            background-color: #005C36;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .javadoc-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .dev-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mercadona APP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="funcionamiento.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_principal.html">Ventana Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_registro.html">Ventana Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_inicio_sesion.html">Ventana Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalacion_java.html">Instalación de Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empaquetar_en_jar.html">Empaquetado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section>
+            <h2>Instalación de Java en Windows - Tutorial</h2>
+            <p>Bienvenido al tutorial de instalación de Java en Windows. A continuación, te guiaré a través de los pasos para instalar Java y configurar las variables de entorno en tu sistema.</p>
+            <ol>
+                <li><strong>Descarga de Java:</strong> Visita el sitio oficial de Oracle o AdoptOpenJDK para descargar la última versión de Java para Windows.</li>
+                <li><strong>Instalación:</strong> Ejecuta el instalador descargado y sigue las instrucciones del asistente de instalación.</li>
+                <li><strong>Configuración de variables de entorno:</strong> Abre el menú de inicio, busca "Variables de entorno" y selecciona "Editar las variables de entorno del sistema".</li>
+                <li><strong>Variables de usuario:</strong> En la sección "Variables para Usuario", haz clic en "Nuevo" y agrega las siguientes variables:
+                    <ul>
+                        <li><code>Variable: JAVA_HOME</code> - <code>Valor: C:\Program Files\Java\jdk1.x.x</code> (Reemplaza "1.x.x" con la versión instalada).</li>
+                        <li><code>Variable: PATH</code> - <code>Valor: %JAVA_HOME%\bin</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Verificación:</strong> Abre una nueva ventana de la línea de comandos y ejecuta <code>java -version</code> y <code>javac -version</code> para verificar la instalación.</li>
+            </ol>
+            <img src="imagenes/instalacion_java.png" alt="Instalación de Java en Windows">
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Mercadona App | Todos los derechos reservados</p>
+        <p>Disclaimer: Este sitio web es solo un ejemplo. No representa un producto o servicio real.</p>
+        <p>Autores: Francisco Cabrera, Manuel Chaves, Yeray Linares, Juan Millan</p>
+        <a href="doc/index.html" target="_blank" class="dev-btn">Modo Desarrollador</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
