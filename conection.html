@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ventana Iniciar Sesión - Manual de Ayuda de la Aplicación</title>
+    <title>Useraccount- Manual de Ayuda de la Aplicación</title>
     <link rel="icon" href="imagenes/app.ico" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -67,38 +68,26 @@
             margin-top: 10px;
         }
 
-        /* Estilos específicos para ventana_inicio_sesion.html */
-        #ventanaInicioSesion {
+        #ventanaPrincipal {
             background-color: #2A8C63;
-            margin: 10px 0;
+            color: #FFFFFF;
             padding: 20px;
             border-radius: 8px;
-            color: #FFFFFF;
+            margin: 10px 0;
         }
 
-        #ventanaInicioSesion h2 {
-            color: #FFFFFF;
-            /* Color del texto del encabezado */
-        }
-
-        #ventanaInicioSesion p {
-            color: #FFFFFF;
-            /* Color del texto del párrafo */
-        }
-
-        /* Estilo para la imagen */
-        #ventanaInicioSesion img {
+        #ventanaPrincipal img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-
-        /* Agregar estilos adicionales según sea necesario */
+        figcaption {
+            text-align: center;
+            margin-top: 10px;
+            color: #CCCCCC;
+        }
     </style>
 </head>
 
@@ -169,34 +158,20 @@
         </div>
     </nav>
 
-
     <div class="container mt-4">
-        <!-- Contenido principal -->
-        <section id="ventanaInicioSesion">
-            <h2>Ventana Iniciar Sesión</h2>
-            <p>La Ventana Iniciar Sesión es una interfaz gráfica de usuario diseñada para que los usuarios ingresen sus
-                datos y realicen operaciones dentro de la aplicación.</p>
-            <img src="imagenes/Capturas/Login/Metodo_iniciarSesion.png" alt="Interfaz de Inicio de Sesión" />
-            <p>En esta interfaz, los usuarios pueden ingresar sus credenciales de acceso y acceder a sus cuentas en la
-                tienda digital.</p>
-            <img src="imagenes/Capturas/Login/Metodo_reproducirAudio.png" alt="Reproducción de Audio" />
-            <p>La aplicación destaca por ofrecer opciones de accesibilidad, como la narración de audio, menús
-                contextuales y sugerencias visuales, además de atajos de teclado.</p>
-            <img src="imagenes/Capturas/Login/Metodo_volverAtras.png" alt="Método Volver Atrás" />
-
-            <h2>Controlador de Ventana Iniciar Sesión</h2>
-            <p>Para gestionar eficientemente los eventos en la Ventana Iniciar Sesión, se implementa un controlador
-                específico.</p>
-            <img src="imagenes/Capturas/Login/controlador/Metodo_IniciarSesion.png"
-                alt="Controlador de Inicio de Sesión" />
-            <p>En este método, se lleva a cabo el manejo de las operaciones relacionadas con el inicio de sesión.</p>
-            <img src="imagenes/Capturas/Login/controlador/Metodo_reproducirAudio.png"
-                alt="Controlador de Reproducción de Audio" />
-            <p>La aplicación sigue destacando por sus opciones de accesibilidad en el controlador, proporcionando una
-                experiencia inclusiva para los usuarios.</p>
-            <img src="imagenes/Capturas/Login/controlador/Metodo_volverAtras.png" alt="Controlador de Volver Atrás" />
-        </section>
-
+        <section id="ventanaPrincipal">
+            <section id="ventanaRegistro">
+                <section id="ventanaRegistro">
+                    <h2>Connection</h2>
+                    <p>La Ventana Registro permite a los usuarios crear nuevas cuentas en la aplicación para acceder a
+                        funcionalidades exclusivas.</p>
+                    <img src="imagenes/Connection_Connection.PNG" alt="Interfaz de Registro" />
+                    <figcaption>Constructor de la clase UserAccount</figcaption>
+                    <p>En esta interfaz, los usuarios pueden ingresar sus credenciales de acceso y acceder a sus cuentas
+                        en
+                        la tienda digital.</p>
+                </section>
+            </section>
     </div>
 
     <footer>
