@@ -1,2 +1,2 @@
 # PagianDeAyudaInterfacesAPP
-pagiande ayuda para la aplicacion de interfaces
+pagina de ayuda para la aplicacion de interfaces
