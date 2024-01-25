@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Iniciar Sesión - Manual de Ayuda de la Aplicación</title>
+    <link rel="icon" href="imagenes/app.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #89E8B8;
+            padding-top: 56px;
+            /* Altura del navbar fijo */
+        }
+
+        nav {
+            background-color: #00754D;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #000000;
+            /* Cambiado a negro para mayor contraste */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #000000;
+            /* Cambiado a negro para mayor contraste */
+        }
+
+        section {
+            background-color: #2A8C63;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+
+        footer {
+            background-color: #005C36;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .javadoc-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .dev-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        /* Estilos específicos para ventana_inicio_sesion.html */
+        #ventanaInicioSesion {
+            background-color: #2A8C63;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+
+        #ventanaInicioSesion h2 {
+            color: #FFFFFF;
+            /* Color del texto del encabezado */
+        }
+
+        #ventanaInicioSesion p {
+            color: #FFFFFF;
+            /* Color del texto del párrafo */
+        }
+
+        /* Estilo para la imagen */
+        #ventanaInicioSesion img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* Agregar estilos adicionales según sea necesario */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mercadona App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_principal_developer.html">Ventana Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_registro_developer.html">Ventana Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_inicio_sesion_developer.html">Ventana Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            modelo
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="userAccountdao.html" target="_blank">UserAccountDAO</a></li>
+                            <li><a class="dropdown-item" href="userAccount.html">UserAccount</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                           Conexion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="doc/index.html" target="_blank">Conexion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="doc/index.html" target="_blank">JavaDoc</a></li>
+                            <li><a class="dropdown-item" href="index.html">Vista Usuario Común</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Utiles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="utiles.html" target="_blank">utiles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <!-- Contenido principal -->
+        <section id="ventanaInicioSesion">
+            <h2>Ventana Iniciar Sesión</h2>
+            <p>La Ventana Iniciar Sesión es una interfaz gráfica de usuario diseñada para que los usuarios ingresen sus
+                datos y realicen operaciones dentro de la aplicación.</p>
+            <img src="imagenes/Capturas/Login/Metodo_iniciarSesion.png" alt="Interfaz de Inicio de Sesión" />
+            <p>En esta interfaz, los usuarios pueden ingresar sus credenciales de acceso y acceder a sus cuentas en la
+                tienda digital.</p>
+            <img src="imagenes/Capturas/Login/Metodo_reproducirAudio.png" alt="Reproducción de Audio" />
+            <p>La aplicación destaca por ofrecer opciones de accesibilidad, como la narración de audio, menús
+                contextuales y sugerencias visuales, además de atajos de teclado.</p>
+            <img src="imagenes/Capturas/Login/Metodo_volverAtras.png" alt="Método Volver Atrás" />
+
+            <h2>Controlador de Ventana Iniciar Sesión</h2>
+            <p>Para gestionar eficientemente los eventos en la Ventana Iniciar Sesión, se implementa un controlador
+                específico.</p>
+            <img src="imagenes/Capturas/Login/controlador/Metodo_IniciarSesion.png"
+                alt="Controlador de Inicio de Sesión" />
+            <p>En este método, se lleva a cabo el manejo de las operaciones relacionadas con el inicio de sesión.</p>
+            <img src="imagenes/Capturas/Login/controlador/Metodo_reproducirAudio.png"
+                alt="Controlador de Reproducción de Audio" />
+            <p>La aplicación sigue destacando por sus opciones de accesibilidad en el controlador, proporcionando una
+                experiencia inclusiva para los usuarios.</p>
+            <img src="imagenes/Capturas/Login/controlador/Metodo_volverAtras.png" alt="Controlador de Volver Atrás" />
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2024 Mercadona App | Todos los derechos reservados</p>
+        <p>Disclaimer: Este sitio web es solo un ejemplo. No representa un producto o servicio real.</p>
+        <p>Autores: Francisco Cabrera, Manuel Chaves, Yeray Linares, Juan Millan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

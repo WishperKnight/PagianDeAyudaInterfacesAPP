@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Registro - Manual de Ayuda de la Aplicación</title>
+    <link rel="icon" href="imagenes/app.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #89E8B8;
+            padding-top: 56px; /* Altura del navbar fijo */
+        }
+        nav {
+            background-color: #00754D;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #000000; /* Cambiado a negro para mayor contraste */
+        }
+        .navbar-toggler-icon {
+            background-color: #000000; /* Cambiado a negro para mayor contraste */
+        }
+        section {
+            background-color: #2A8C63;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+        footer {
+            background-color: #005C36;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .javadoc-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .dev-btn {
+            background-color: #004D29;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        #ventanaPrincipal {
+            background-color: #2A8C63;
+            color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        #ventanaPrincipal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 10px;
+            color: #CCCCCC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mercadona App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_principal_developer.html">Ventana Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_registro_developer.html">Ventana Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_inicio_sesion_developer.html">Ventana Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            modelo
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="userAccountdao.html" target="_blank">UserAccountDAO</a></li>
+                            <li><a class="dropdown-item" href="userAccount.html">UserAccount</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                           Conexion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="doc/index.html" target="_blank">Conexion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="doc/index.html" target="_blank">JavaDoc</a></li>
+                            <li><a class="dropdown-item" href="index.html">Vista Usuario Común</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Utiles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="utiles.html" target="_blank">utiles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section id="ventanaPrincipal">
+            <section id="ventanaRegistro">
+                <h2>Vista Ventana Registro</h2>
+                <p>La Ventana Registro permite a los usuarios crear nuevas cuentas en la aplicación para acceder a funcionalidades exclusivas.</p>
+                <img src="imagenes/Capturas/Register/Metodo_registrarUsuarioEnLaBBDD.png" alt="Interfaz de Registro" />
+                <figcaption>Interfaz de Registro</figcaption>
+                <p>En esta interfaz, los usuarios pueden ingresar sus credenciales de acceso y acceder a sus cuentas en la tienda digital.</p>
+                
+                <img src="imagenes/Capturas/Register/Metodo_reproducirAudio.png" alt="Reproducción de Audio" />
+                <figcaption>Reproducción de Audio</figcaption>
+                <p>La aplicación destaca por ofrecer opciones de accesibilidad, como la narración de audio, menús contextuales y sugerencias visuales, además de atajos de teclado.</p>
+
+                <img src="imagenes/Capturas/Register/Metodo_setUsername.png" alt="Establecer Nombre de Usuario" />
+                <figcaption>Establecer Nombre de Usuario</figcaption>
+                <p>En este paso, los usuarios eligen un nombre de usuario único que los identificará en la plataforma.</p>
+
+                <img src="imagenes/Capturas/Register/Metodo_volverAtras.png" alt="Método Volver Atrás" />
+                <figcaption>Método Volver Atrás</figcaption>
+                <p>Este método permite a los usuarios retroceder en el proceso de registro si desean realizar cambios o cancelar la operación.</p>
+
+                <h2>Controlador de Ventana Registro</h2>
+                <p>El controlador de la Ventana Registro gestiona eficientemente los eventos relacionados con la creación de nuevas cuentas.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_campoVacio.png" alt="Validación de Campo Vacío" />
+                <figcaption>Validación de Campo Vacío</figcaption>
+                <p>Este método garantiza que todos los campos obligatorios estén completos antes de proceder con el registro.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_ContrasenaSegura.png" alt="Validación de Contraseña Segura" />
+                <figcaption>Validación de Contraseña Segura</figcaption>
+                <p>En este método, se verifica que la contraseña proporcionada cumpla con los criterios de seguridad establecidos.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_createUserName(Parte_1).png" alt="Creación de Nombre de Usuario (Parte 1)" />
+                <img src="imagenes/Capturas/Register/controlador/Metodo_CreateUserName(Parte_2).png" alt="Creación de Nombre de Usuario (Parte 2)" />
+                <figcaption>Creación de Nombre de Usuario</figcaption>
+                <p>Estos métodos aseguran la generación de un nombre de usuario único y válido.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_RegistrarUsuarioEnLaBBDD(Parte_1).png" alt="Registro de Usuario en la Base de Datos (Parte 1)" />
+                <figcaption>Registro de Usuario en la Base de Datos</figcaption>
+                <p>Este método inicia el proceso de almacenamiento de la información del usuario en la base de datos de la aplicación.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_ReproducirAudio.png" alt="Reproducción de Audio" />
+                <figcaption>Reproducción de Audio</figcaption>
+                <p>Se encarga de proporcionar una experiencia auditiva agradable durante el proceso de registro.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_SetUsername.png" alt="Establecer Nombre de Usuario" />
+                <figcaption>Establecer Nombre de Usuario</figcaption>
+                <p>Este método gestiona la asignación del nombre de usuario elegido por el usuario.</p>
+
+                <img src="imagenes/Capturas/Register/controlador/Metodo_ValidateFields.png" alt="Validación de Campos" />
+                <figcaption>Validación de Campos</figcaption>
+                <p>Se encarga de validar todos los campos antes de completar el proceso de registro.</p>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Mercadona App | Todos los derechos reservados</p>
+        <p>Disclaimer: Este sitio web es solo un ejemplo. No representa un producto o servicio real.</p>
+        <p>Autores: Francisco Cabrera, Manuel Chaves, Yeray Linares, Juan Millan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

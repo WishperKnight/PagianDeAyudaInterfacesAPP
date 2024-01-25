@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalación de Java en Windows - Manual de Ayuda</title>
+    <link rel="icon" href="imagenes/app.ico" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -43,6 +45,10 @@
             bottom: 0;
         }
 
+        code {
+            color: aqua;
+        }
+
         .javadoc-btn {
             background-color: #004D29;
             color: #FFFFFF;
@@ -61,6 +67,13 @@
             border-radius: 5px;
             text-decoration: none;
             margin-top: 10px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -102,18 +115,26 @@
     <div class="container mt-4">
         <section>
             <h2>Instalación de Java en Windows - Tutorial</h2>
-            <p>Bienvenido al tutorial de instalación de Java en Windows. A continuación, te guiaré a través de los pasos para instalar Java y configurar las variables de entorno en tu sistema.</p>
+            <p>Bienvenido al tutorial de instalación de Java en Windows. A continuación, te guiaré a través de los pasos
+                para instalar Java y configurar las variables de entorno en tu sistema.</p>
             <ol>
-                <li><strong>Descarga de Java:</strong> Visita el sitio oficial de Oracle o AdoptOpenJDK para descargar la última versión de Java para Windows.</li>
-                <li><strong>Instalación:</strong> Ejecuta el instalador descargado y sigue las instrucciones del asistente de instalación.</li>
-                <li><strong>Configuración de variables de entorno:</strong> Abre el menú de inicio, busca "Variables de entorno" y selecciona "Editar las variables de entorno del sistema".</li>
-                <li><strong>Variables de usuario:</strong> En la sección "Variables para Usuario", haz clic en "Nuevo" y agrega las siguientes variables:
+                <li><strong>Descarga de Java:</strong> Visita el sitio oficial de Oracle o AdoptOpenJDK para descargar
+                    la última versión de Java para Windows.</li>
+                <li><strong>Instalación:</strong> Ejecuta el instalador descargado y sigue las instrucciones del
+                    asistente de instalación.</li>
+                <li><strong>Configuración de variables de entorno:</strong> Abre el menú de inicio, busca "Variables de
+                    entorno" y selecciona "Editar las variables de entorno del sistema".</li>
+                <li><strong>Variables de usuario:</strong> En la sección "Variables para Usuario", haz clic en "Nuevo" y
+                    agrega las siguientes variables:
                     <ul>
-                        <li><strong><code>Variable: JAVA_HOME</code> - <code>Valor: C:\Program Files\Java\jdk1.x.x</code> </strong>(Reemplaza "1.x.x" con la versión instalada).</li>
+                        <li><strong><code>Variable: JAVA_HOME</code> -
+                                <code>Valor: C:\Program Files\Java\jdk1.x.x</code> </strong>(Reemplaza "1.x.x" con la
+                            versión instalada).</li>
                         <li><strong><code>Variable: PATH</code> - <code>Valor: %JAVA_HOME%\bin</code></strong>.</li>
                     </ul>
                 </li>
-                <li><strong>Verificación:</strong> Abre una nueva ventana de la línea de comandos y ejecuta <code>java -version</code> y <code>javac -version</code> para verificar la instalación.</li>
+                <li><strong>Verificación:</strong> Abre una nueva ventana de la línea de comandos y ejecuta
+                    <code>java -version</code> y <code>javac -version</code> para verificar la instalación.</li>
             </ol>
             <img src="imagenes/instalacion_java.png" alt="Instalación de Java en Windows">
         </section>
